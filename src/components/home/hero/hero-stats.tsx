@@ -1,39 +1,47 @@
 "use client";
 
 import CountUp from "react-countup";
-import { GraduationCap, HeartHandshake, Star, Calendar } from "lucide-react";
+import {
+  Calendar,
+  Users,
+  HeartHandshake,
+  HandHelping,
+} from "lucide-react";
 
 const stats = [
   {
     icon: Calendar,
-    value: 27,
+    value: 30,
     suffix: "+",
     label: "Years of Service",
+    description: "Serving the community since 1992",
   },
   {
-    icon: GraduationCap,
+    icon: Users,
     value: 500,
     suffix: "+",
-    label: "Students Empowered",
-  },
-  {
-    icon: Star,
-    value: 4.7,
-    suffix: "/5",
-    decimals: 1,
-    label: "Community Rating",
+    label: "Children Supported",
+    description: "Empowering children through inclusive education",
   },
   {
     icon: HeartHandshake,
-    value: 99,
-    suffix: "%",
-    label: "Dedicated Care",
+    value: 250,
+    suffix: "+",
+    label: "Senior Citizens Cared For",
+    description: "Providing compassionate residential care",
+  },
+  {
+    icon: HandHelping,
+    value: 13000,
+    suffix: "+",
+    label: "Assistive Devices Distributed",
+    description: "Supporting persons with disabilities",
   },
 ];
 
 export default function HeroStats() {
   return (
-    <div className="mt-6 grid grid-cols-2 gap-2.5 lg:grid-cols-4">
+    <div className="mt-4 grid grid-cols-2 gap-2.5 lg:grid-cols-4">
       {stats.map((item) => {
         const Icon = item.icon;
 

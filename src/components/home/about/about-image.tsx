@@ -13,7 +13,7 @@ export default function AboutImage() {
       className="relative"
     >
       <Image
-        src="/images/about.jpg"
+        src="/images/hero/slide-1.jpg"
         alt="Students at Vishwa Bharathi"
         width={450}
         height={450}
@@ -22,11 +22,11 @@ export default function AboutImage() {
 
       <div className="absolute -bottom-3 -right-3 rounded-3xl bg-white p-3 shadow-xl">
         <p className="text-2xl font-bold text-[#0A5EB0]">
-          27+
+          30+
         </p>
 
         <p className="mt-1 text-slate-600">
-          Years of Service
+          Years of Dedicated Service
         </p>
       </div>
     </motion.div>

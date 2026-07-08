@@ -7,10 +7,12 @@ import DonateButton from "@/components/common/buttons/donate-button";
 import EnquireButton from "@/components/common/buttons/enquire-button";
 
 const features = [
-  "Special Education",
-  "Therapy & Rehabilitation",
-  "Vocational Training",
-  "Parent Guidance & Support",
+  "Established in 1992",
+  "Registered Non-Profit Society",
+  "Special School",
+  "District Disability Rehabilitation Centre",
+  "Old Age Home",
+  "Serving Ballari & Surrounding Districts",
 ];
 
 export default function AboutContent() {
@@ -23,22 +25,26 @@ export default function AboutContent() {
       className="max-w-xl"
     >
       <span className="inline-flex rounded-full bg-blue-100 px-2 py-1 text-sm font-semibold text-[#0A5EB0]">
-        ABOUT VISHWA BHARATHI
+        ABOUT US
       </span>
 
       <h2 className="mt-2 text-2xl font-bold leading-tight text-slate-900 lg:text-3xl">
-        Providing Care,
+        Vishwa Bharathi
         <br />
-        Education and Hope
+        Kalanikethan &
         <br />
-        for Every Child.
+        Education Society
       </h2>
 
       <p className="mt-3 text-lg leading-6 text-slate-600">
-        Established in 1996, Vishwa Bharathi Kalanikethan and Education Society
-        is dedicated to empowering children with intellectual disabilities
-        through quality education, therapy, rehabilitation and vocational
-        training in a safe, caring and inclusive environment.
+        Established in 1992, Vishwa Bharathi Kalanikethan & Education Society is a registered, non-profit and non-political organization dedicated to empowering children with special needs, supporting persons with disabilities and providing compassionate care for senior citizens across Ballari and surrounding regions.
+      </p>
+      <p className="mt-4 text-lg leading-8 text-slate-600">
+        For more than three decades, our organization has promoted
+        inclusive education, rehabilitation, vocational training,
+        community awareness and elderly care through three major
+        service wings that continue to transform lives with dignity,
+        compassion and opportunity.
       </p>
 
       <div className="mt-5 grid gap-2">

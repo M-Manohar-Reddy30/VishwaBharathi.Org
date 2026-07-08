@@ -7,6 +7,8 @@ import {
   HeartHandshake,
   ShieldCheck,
   BriefcaseBusiness,
+  Stethoscope,
+  Users,
 } from "lucide-react";
 
 import WhyCard from "./why-card";
@@ -14,27 +16,39 @@ import WhyCard from "./why-card";
 const items = [
   {
     icon: GraduationCap,
-    title: "Experienced Educators",
+    title: "Inclusive Education",
     description:
-      "Qualified special educators dedicated to helping every child achieve their fullest potential.",
+      "Personalized education designed to help every child learn, grow and achieve independence.",
   },
   {
-    icon: HeartHandshake,
-    title: "Individual Care",
+    icon: Stethoscope,
+    title: "Therapy & Rehabilitation",
     description:
-      "Every child receives personalized attention, compassion and tailored learning support.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Safe Environment",
-    description:
-      "A secure, inclusive and nurturing campus where children feel respected and valued.",
+      "Professional therapy and rehabilitation services that support physical, emotional and developmental growth.",
   },
   {
     icon: BriefcaseBusiness,
     title: "Vocational Training",
     description:
-      "Practical skill development that promotes confidence, independence and future opportunities.",
+      "Practical skill development that prepares individuals for greater confidence and independent living.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Safe Residential Campus",
+    description:
+      "A secure, inclusive and caring campus where children and senior citizens feel safe and respected.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Compassionate Care",
+    description:
+      "Dedicated educators, therapists and caregivers committed to improving lives with dignity and compassion.",
+  },
+  {
+    icon: Users,
+    title: "Family & Community Partnership",
+    description:
+      "Working closely with families and the community to create lasting positive change and support.",
   },
 ];
 
@@ -51,13 +65,11 @@ export default function WhyUs() {
           </span>
 
           <h2 className="mt-4 text-3xl font-bold text-slate-900 lg:text-3xl">
-            Trusted by Families Since 1996
+            Why Families Trust Vishwa Bharathi
           </h2>
 
           <p className="mt-4 text-lg leading-6 text-slate-600">
-            We provide holistic education, therapy, rehabilitation and
-            vocational training with compassion, dignity and care for every
-            child.
+            For over three decades, Vishwa Bharathi has empowered children with special needs, supported persons with disabilities and cared for senior citizens through education, rehabilitation and compassionate service.
           </p>
         </div>
 
