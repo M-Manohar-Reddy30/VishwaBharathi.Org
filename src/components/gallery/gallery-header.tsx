@@ -6,26 +6,40 @@ export default function GalleryHeader({
   preview = false,
 }: GalleryHeaderProps) {
   return (
-    <div className="mx-auto max-w-3xl text-center">
-      <span className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold tracking-wide text-[#0A5EB0]">
-        GALLERY
+    <div className="mx-auto max-w-4xl text-center">
+      {/* Badge */}
+
+      <span className="inline-flex items-center rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold tracking-wider text-[#0A5EB0] uppercase">
+        Our Gallery
       </span>
 
-      <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-3xl">
-        Moments That Matter
+      {/* Heading */}
+
+      <h2 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-slate-900 lg:text-3xl">
+        Capturing Moments,
+        <br />
+        Creating Memories
       </h2>
 
-      <p className="mt-4 text-lg leading-6 text-slate-600">
-        Every smile, every achievement and every milestone reflects our
-        commitment to creating a safe, inclusive and caring environment
-        where every individual is encouraged to learn, grow and thrive.
+      {/* Description */}
+
+      <p className="mx-auto mt-5 max-w-1xl text-lg leading-6 text-slate-600">
+        Every photograph tells a story of hope, learning, compassion and
+        achievement. Explore the inspiring journey of Vishwa Bharathi through
+        inclusive education, rehabilitation services, vocational training,
+        celebrations, community programs and compassionate elderly care.
       </p>
 
+      {/* Homepage Text */}
+
       {preview && (
-        <p className="mt-4 text-sm text-slate-500">
-          Explore a few of our recent moments. Visit the complete gallery
-          to discover many more memories.
-        </p>
+        <div className="mx-auto mt-5 max-w-2xl rounded-2xl border border-blue-100 bg-blue-50 px-6 py-3">
+          <p className="text-sm font-medium text-slate-700">
+            Explore a selection of our latest moments here. Visit the complete
+            gallery to discover our full collection of photographs, events and
+            memories.
+          </p>
+        </div>
       )}
     </div>
   );

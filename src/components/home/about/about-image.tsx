@@ -15,8 +15,8 @@ export default function AboutImage() {
       <Image
         src="/images/hero/slide-1.jpg"
         alt="Students at Vishwa Bharathi"
-        width={450}
-        height={450}
+        width={650}
+        height={650}
         className="rounded-[32px] object-cover shadow-2xl"
       />
 

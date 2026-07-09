@@ -1,17 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { LucideIcon } from "lucide-react";
 
 interface JourneyItemProps {
   year: string;
   title: string;
   description: string;
+  icon: LucideIcon;
 }
 
 export default function JourneyItem({
   year,
   title,
   description,
+  icon: Icon,
 }: JourneyItemProps) {
   return (
     <motion.div
@@ -23,8 +26,8 @@ export default function JourneyItem({
     >
       {/* Circle */}
 
-      <div className="z-10 flex h-14 w-14 items-center justify-center rounded-full bg-[#0A5EB0] text-xl font-bold text-white shadow-lg">
-        ✓
+      <div className="z-10 flex h-16 w-16 items-center justify-center rounded-full bg-[#0A5EB0] text-white shadow-xl transition-all duration-300 group-hover:scale-110">
+        <Icon className="h-8 w-8" />
       </div>
 
       <h3 className="mt-6 text-3xl font-bold text-[#0A5EB0]">

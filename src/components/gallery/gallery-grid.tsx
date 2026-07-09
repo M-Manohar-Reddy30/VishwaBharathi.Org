@@ -14,14 +14,14 @@ export default function GalleryGrid({
 }: GalleryGridProps) {
   if (images.length === 0) {
     return (
-      <div className="flex min-h-[300px] items-center justify-center rounded-[24px] border border-dashed border-slate-300 bg-white">
+      <div className="flex min-h-[350px] items-center justify-center rounded-[32px] border border-dashed border-slate-300 bg-white">
         <div className="text-center">
-          <h3 className="text-xl font-semibold text-slate-800">
+          <h3 className="text-2xl font-bold text-slate-900">
             No Images Found
           </h3>
 
-          <p className="mt-2 text-slate-500">
-            There are no images available in this category yet.
+          <p className="mt-3 text-slate-500">
+            Images for this category will appear here.
           </p>
         </div>
       </div>
@@ -31,12 +31,12 @@ export default function GalleryGrid({
   return (
     <div
       className="
-        mt-10
+        mt-12
         grid
         grid-cols-1
-        gap-4
-        sm:grid-cols-2
-        lg:grid-cols-5
+        gap-8
+        sm:grid-cols-6
+        xl:grid-cols-3
       "
     >
       {images.map((image) => (

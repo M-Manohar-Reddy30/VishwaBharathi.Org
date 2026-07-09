@@ -1,11 +1,26 @@
-import ServiceHero from "./service-hero";
-import ServiceOverview from "./service-overview";
-import ServiceFeatures from "./service-features";
-import ServiceGallery from "./service-gallery";
-import ServiceCTA from "./service-cta";
-
 import { ServicePageData } from "@/types/service";
-import ServiceRelated from "./service-related";
+
+import ServiceHero from "./service-hero";
+
+import ServiceAbout from "./about/service-about";
+
+import AcademicPrograms from "./academics/academic-programs";
+
+import TherapyServices from "./therapy/therapy-services";
+
+import VocationalTraining from "./vocational/vocational-training";
+
+import SportsDevelopment from "./sports/sports-development";
+
+import CulturalActivities from "./cultural/cultural-activities";
+
+import ResidentialFacilities from "./residential/residential-facilities";
+
+import EducationalTours from "./tours/educational-tours";
+
+import ServiceGallery from "./service-gallery";
+
+import ServiceCTA from "./service-cta";
 
 interface ServicePageProps {
   service: ServicePageData;
@@ -16,38 +31,59 @@ export default function ServicePage({
 }: ServicePageProps) {
   return (
     <>
-        <ServiceHero
-            title={service.hero.title}
-            tagline={service.hero.tagline}
-            description={service.hero.description}
-            image={service.hero.image}
-        />
+      {/* Hero */}
 
-        <ServiceOverview
-            title={service.overview.title}
-            description={service.overview.description}
-            image={service.overview.image}
-            highlights={service.overview.highlights}
-        />
+      <ServiceHero
+        title={service.hero.title}
+        tagline={service.hero.tagline}
+        description={service.hero.description}
+        image={service.hero.image}
+      />
 
-        <ServiceFeatures
-            heading={service.features.heading}
-            description={service.features.description}
-            features={service.features.items}
-        />
+      {/* About */}
 
-        <ServiceGallery
-            category={service.gallery.category}
-        />
+      <ServiceAbout />
 
-        <ServiceRelated
-            current={service.slug}
-        />
+      {/* Academic Programs */}
 
-        <ServiceCTA
-            title={service.cta.title}
-            description={service.cta.description}
-        />
+      <AcademicPrograms />
+
+      {/* Therapy */}
+
+      <TherapyServices />
+
+      {/* Vocational */}
+
+      <VocationalTraining />
+
+      {/* Sports */}
+
+      <SportsDevelopment />
+
+      {/* Arts & Cultural */}
+
+      <CulturalActivities />
+
+      {/* Residential */}
+
+      <ResidentialFacilities />
+
+      {/* Educational Tours */}
+
+      <EducationalTours />
+
+      {/* Gallery */}
+
+      <ServiceGallery
+        category={service.gallery.category}
+      />
+
+      {/* Call To Action */}
+
+      <ServiceCTA
+        title={service.cta.title}
+        description={service.cta.description}
+      />
     </>
   );
 }

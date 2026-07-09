@@ -1,42 +1,70 @@
-export interface ImpactStat {
-  id: number;
-  value: number;
-  suffix: string;
-  title: string;
-  description: string;
-}
+import {
+  GraduationCap,
+  BriefcaseBusiness,
+  HeartHandshake,
+  Accessibility,
+  Tent,
+  Users,
+} from "lucide-react";
 
-export const impactStats: ImpactStat[] = [
+export const impactStats = [
   {
     id: 1,
-    value: 27,
-    suffix: "+",
-    title: "Years of Service",
-    description:
-      "Serving children and the community with compassion since 1996.",
-  },
-  {
-    id: 2,
+    icon: "graduation-cap",
     value: 500,
     suffix: "+",
-    title: "Children Supported",
+    title: "Students Benefited",
     description:
-      "Providing education, care and rehabilitation to children with special needs.",
+      "Children empowered through inclusive education and support.",
   },
+
+  {
+    id: 2,
+    icon: "briefcase",
+    value: 50,
+    suffix: "+",
+    title: "Livelihood Training",
+    description:
+      "Students equipped with vocational and life skills.",
+  },
+
   {
     id: 3,
-    value: 4.7,
-    suffix: "★",
-    title: "Community Rating",
+    icon: "heart",
+    value: 250,
+    suffix: "+",
+    title: "Senior Citizens Cared",
     description:
-      "Trusted and appreciated by families, volunteers and the local community.",
+      "Residents receiving compassionate care and dignity.",
   },
+
   {
     id: 4,
-    value: 1000,
+    icon: "accessibility",
+    value: 13000,
     suffix: "+",
-    title: "Lives Impacted",
+    title: "Aids Distributed",
     description:
-      "Making a positive difference through education, care and social support.",
+      "Assistive devices distributed to persons with disabilities.",
+  },
+
+  {
+    id: 5,
+    icon: "tent",
+    value: 1250,
+    suffix: "+",
+    title: "Medical & Outreach Camps",
+    description:
+      "Community awareness and rehabilitation camps conducted.",
+  },
+
+  {
+    id: 6,
+    icon: "users",
+    value: 100,
+    suffix: "+",
+    title: "Dedicated Team",
+    description:
+      "Educators, therapists and caregivers serving every day.",
   },
 ];

@@ -16,25 +16,23 @@ export default function Impact() {
           </span>
 
           <h2 className="mt-4 text-3xl font-bold text-white lg:text-4xl">
-            Creating Meaningful
+            Transforming Lives
             <br />
-            Change Every Day
+            Since 1992
           </h2>
 
           <p className="mt-4 text-lg leading-6 text-blue-100">
-            For more than two decades, Vishwa Bharathi has been
-            empowering children, supporting families and building
-            a more inclusive community through education,
-            rehabilitation and compassionate care.
+            For more than three decades, Vishwa Bharathi has empowered children with special needs, supported persons with disabilities and cared for senior citizens through education, rehabilitation and compassionate service.
           </p>
 
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-4 xl:grid-cols-4">
+        <div className="mt-10 grid gap-6 md:grid-cols-3 xl:grid-cols-3">
 
           {impactStats.map((item, index) => (
             <ImpactCard
               key={item.id}
+              icon={item.icon}
               value={item.value}
               suffix={item.suffix}
               title={item.title}

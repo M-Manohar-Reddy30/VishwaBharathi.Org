@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import {
   GalleryCategory,
   galleryCategories,
@@ -16,20 +17,29 @@ export default function GalleryFilter({
   onCategoryChange,
 }: GalleryFilterProps) {
   return (
-    <div className="mt-10 mb-10">
-      <div className="flex items-center gap-3 overflow-x-auto pb-2 md:justify-center scrollbar-hide">
+    <div className="my-6 flex justify-center">
+      <div className="flex w-fit items-center gap-1 overflow-x-auto rounded-full border border-slate-200 bg-white p-2 shadow-lg scrollbar-hide">
+
         {galleryCategories.map((category) => {
           const active = activeCategory === category.value;
 
           return (
             <motion.button
               key={category.id}
-              whileTap={{ scale: 0.96 }}
-              onClick={() => onCategoryChange(category.value)}
+              type="button"
+              whileHover={{
+                y: -2,
+              }}
+              whileTap={{
+                scale: 0.96,
+              }}
+              onClick={() =>
+                onCategoryChange(category.value)
+              }
               className={`relative whitespace-nowrap rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 ${
                 active
                   ? "bg-[#0A5EB0] text-white shadow-lg"
-                  : "bg-white text-slate-700 shadow-sm hover:bg-blue-50 hover:text-[#0A5EB0]"
+                  : "text-slate-700 hover:bg-slate-100 hover:text-[#0A5EB0]"
               }`}
             >
               {category.label}
@@ -48,6 +58,7 @@ export default function GalleryFilter({
             </motion.button>
           );
         })}
+
       </div>
     </div>
   );

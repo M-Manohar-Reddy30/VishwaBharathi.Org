@@ -3,8 +3,17 @@
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import {
+  GraduationCap,
+  BriefcaseBusiness,
+  HeartHandshake,
+  Accessibility,
+  Tent,
+  Users,
+} from "lucide-react";
 
 interface ImpactCardProps {
+  icon: string;
   value: number;
   suffix: string;
   title: string;
@@ -13,6 +22,7 @@ interface ImpactCardProps {
 }
 
 export default function ImpactCard({
+  icon,
   value,
   suffix,
   title,
@@ -23,6 +33,17 @@ export default function ImpactCard({
     triggerOnce: true,
     threshold: 0.35,
   });
+
+  const icons = {
+    "graduation-cap": GraduationCap,
+    briefcase: BriefcaseBusiness,
+    heart: HeartHandshake,
+    accessibility: Accessibility,
+    tent: Tent,
+    users: Users,
+  };
+
+  const Icon = icons[icon as keyof typeof icons];
 
   return (
     <motion.div
@@ -38,6 +59,9 @@ export default function ImpactCard({
         y: -8,
       }}
       className="group rounded-[28px] bg-white p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl" >
+      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0A5EB0]/10">
+        <Icon className="h-7 w-7 text-[#0A5EB0]" />
+      </div>
       <h3 className="text-5xl font-bold tracking-tight text-[#0A5EB0]">
         {inView ? (
           <CountUp

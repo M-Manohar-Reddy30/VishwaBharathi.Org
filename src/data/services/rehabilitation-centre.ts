@@ -1,33 +1,37 @@
 import { ServicePageData } from "@/types/service";
 
-export const rehabilitation: ServicePageData = {
+export const rehabilitationCentre: ServicePageData = {
   slug: "rehabilitation-centre",
 
   hero: {
-    title: "Rehabilitation Centre",
+    title: "District Disability Rehabilitation Centre",
 
-    tagline: "Helping Every Individual Achieve Greater Independence",
+    tagline:
+      "Empowering Persons with Disabilities Through Comprehensive Rehabilitation",
 
     description:
-      "Our Rehabilitation Centre offers comprehensive therapy and rehabilitation services designed to improve mobility, communication, confidence and overall quality of life through personalized care.",
+      "The District Disability Rehabilitation Centre (DDRC) provides multidisciplinary rehabilitation services for children and adults with disabilities. Through assessment, therapy, assistive devices, community outreach and awareness programmes, we empower individuals to achieve greater independence, dignity and inclusion in society.",
 
-    image: "/images/services/rehabilitation-center.jpg",
+    image: "/images/services/rehabilitation-centre.jpg",
   },
 
   overview: {
-    title: "Supporting Recovery & Independence",
+    title: "Comprehensive Rehabilitation for Every Individual",
 
     description:
-      "Our multidisciplinary team works closely with individuals and families to provide customized rehabilitation programs that promote independence, confidence and long-term well-being.",
+      "Established to provide accessible rehabilitation services, the District Disability Rehabilitation Centre offers assessment, physiotherapy, occupational therapy, speech therapy, psychological support, assistive devices and community-based rehabilitation. Our experienced team works closely with individuals, families and communities to improve quality of life and promote equal opportunities for persons with disabilities.",
 
     image: "/images/services/rehabilitation-centre.jpg",
 
     highlights: [
+      "Early Identification & Assessment",
+      "Physiotherapy Services",
       "Occupational Therapy",
       "Speech & Language Therapy",
-      "Physiotherapy Support",
-      "Individual Rehabilitation Plans",
-      "Family Guidance & Counseling",
+      "Psychological Assessment",
+      "Community-Based Rehabilitation",
+      "Assistive Devices Distribution",
+      "Government Welfare Scheme Guidance",
     ],
   },
 
@@ -35,44 +39,79 @@ export const rehabilitation: ServicePageData = {
     heading: "Our Rehabilitation Services",
 
     description:
-      "We combine professional expertise with compassionate care to help every individual reach their full potential.",
+      "The centre provides professional rehabilitation services that support physical, emotional, educational and social development while promoting independent living.",
 
     items: [
       {
+        title: "Disability Assessment",
+        description:
+          "Comprehensive assessment and early identification of developmental and physical disabilities using multidisciplinary evaluation.",
+
+        image:
+          "/images/services/rehabilitation-centre/assessment.jpg",
+      },
+
+      {
         title: "Physiotherapy",
         description:
-          "Improving mobility, balance and physical strength through guided therapy.",
-        image: "/images/services/rehabilitation-centre/feature-1.jpg",
+          "Personalized physiotherapy programmes improve mobility, posture, balance, coordination and physical independence.",
+
+        image:
+          "/images/services/rehabilitation-centre/physiotherapy.jpg",
       },
+
       {
         title: "Occupational Therapy",
         description:
-          "Enhancing daily living skills and independence through structured interventions.",
-        image: "/images/services/rehabilitation/feature-2.jpg",
+          "Therapy sessions focus on improving fine motor skills, sensory integration, self-care and daily living activities.",
+
+        image:
+          "/images/services/rehabilitation-centre/occupational-therapy.jpg",
       },
+
       {
-        title: "Speech Therapy",
+        title: "Speech & Language Therapy",
         description:
-          "Helping individuals improve communication and language abilities.",
-        image: "/images/services/rehabilitation/feature-3.jpg",
+          "Helping children and adults develop communication, language and social interaction skills through specialized intervention.",
+
+        image:
+          "/images/services/rehabilitation-centre/speech-therapy.jpg",
       },
+
       {
-        title: "Behavioral Therapy",
+        title: "Assistive Devices",
         description:
-          "Supporting emotional development, confidence and positive social interaction.",
-        image: "/images/services/rehabilitation/feature-4.jpg",
+          "Assessment, recommendation and distribution of assistive devices that improve mobility, accessibility and quality of life.",
+
+        image:
+          "/images/services/rehabilitation-centre/assistive-devices.jpg",
       },
+
       {
-        title: "Individual Care Plans",
+        title: "Community-Based Rehabilitation",
         description:
-          "Every rehabilitation program is tailored to the individual's needs and goals.",
-        image: "/images/services/rehabilitation/feature-5.jpg",
+          "Outreach programmes, awareness camps and rehabilitation services delivered directly within communities to improve accessibility and inclusion.",
+
+        image:
+          "/images/services/rehabilitation-centre/community-rehabilitation.jpg",
       },
+
       {
-        title: "Family Counseling",
+        title: "Awareness & Training Programmes",
         description:
-          "Working together with families to ensure continuous progress and support.",
-        image: "/images/services/rehabilitation/feature-6.jpg",
+          "Educational workshops and awareness campaigns for families, schools, healthcare workers and community members.",
+
+        image:
+          "/images/services/rehabilitation-centre/awareness.jpg",
+      },
+
+      {
+        title: "Government Scheme Assistance",
+        description:
+          "Support in accessing disability certificates, welfare programmes, assistive schemes and government rehabilitation benefits.",
+
+        image:
+          "/images/services/rehabilitation-centre/government-support.jpg",
       },
     ],
   },
@@ -82,9 +121,9 @@ export const rehabilitation: ServicePageData = {
   },
 
   cta: {
-    title: "Together We Build Brighter Futures",
+    title: "Together We Can Build an Inclusive Society",
 
     description:
-      "Our rehabilitation team is committed to empowering every individual through compassionate care, therapy and lifelong support.",
+      "Whether you are seeking rehabilitation services, therapy, disability assessment or guidance on government welfare programmes, our dedicated team is here to support you with compassion, expertise and dignity.",
   },
 };
