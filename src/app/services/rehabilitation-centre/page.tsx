@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import ServicePage from "@/components/service/service-page";
-import { rehabilitation } from "@/data/services/rehabilitation-centre";
+import { rehabilitationCentre } from "@/data/services/rehabilitation-centre";
 
 export const metadata: Metadata = {
   title: "Rehabilitation Centre | Vishwa Bharathi",
@@ -32,5 +32,5 @@ export const metadata: Metadata = {
 };
 
 export default function RehabilitationPage() {
-  return <ServicePage service={rehabilitation} />;
+  return <ServicePage service={rehabilitationCentre} />;
 }

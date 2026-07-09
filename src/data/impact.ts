@@ -1,12 +1,3 @@
-import {
-  GraduationCap,
-  BriefcaseBusiness,
-  HeartHandshake,
-  Accessibility,
-  Tent,
-  Users,
-} from "lucide-react";
-
 export const impactStats = [
   {
     id: 1,

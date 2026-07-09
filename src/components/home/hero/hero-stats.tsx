@@ -55,7 +55,6 @@ export default function HeroStats() {
             <h3 className="text-1.5xl font-bold">
               <CountUp
                 end={item.value}
-                decimals={item.decimals ?? 0}
                 duration={2}
               />
               {item.suffix}
